@@ -161,7 +161,7 @@ def page_register():
     st.progress(0.5)
 
     with st.form("register_form"):
-        reg_no = st.text_input("Registration number", placeholder="CAUG26-0144", max_chars=10)
+        reg_no = st.text_input("Registration number", placeholder="CAUG26-0144", max_chars=11)
         name = st.text_input("Full name", placeholder="Your name")
         program = st.selectbox("Which BCA program are you studying?", ["Select a program"] + PROGRAMS)
         next_clicked = st.form_submit_button("Next ➜")
